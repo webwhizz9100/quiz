@@ -1,0 +1,22 @@
+
+Fetching from https://opentdb.com/ with the bellow structure
+
+{
+    "response_code": 0,
+    "score" : 0,
+    "results": [
+        {
+            "category": "Animals",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What does &quot;hippopotamus&quot; mean and in what langauge?",
+            "correct_answer": "River Horse (Greek)",
+            "incorrect_answers": [
+                "River Horse (Latin)",
+                "Fat Pig (Greek)",
+                "Fat Pig (Latin)"
+            ],
+
+            "user_answer" :  "River Horse (Latin)"
+            
+        }

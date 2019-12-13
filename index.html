@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>Quiz</h1>
+        <div id="score"></div>
+
+        <button onclick="quiz.init()">Take the Quiz</button>
+        
+        <ol id="questions">
+
+            <script id="question-template" type="text/x-handlebars">
+                <li class="question">
+                    <h2>{{question}}</h2>
+                    <ol class="answers">
+                        {{#answers}}
+                        <li class="answer"><input type="radio" value="{{answer}}" name="{{id}}"> {{answer}}</li>
+                        {{/answers}}
+                    </ol>
+                </li>
+            </script>
+
+        </ol>
+
+
+        <button onclick="quiz.checkAnswers()">Check Your Answer</button>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</script>
+</body>
+</html>
